@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BerYoga</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <form class="modal-wrapper modal-transition">
+
+            <div class="modal-header">
+                <span class="modal-heading">Login</span>
+                <span class="modal-toggle close">
+                    <img src="./img/close.svg" alt="close">
+                </span>
+            </div>
+
+            <div class="modal-body">
+                <label for="login" class="label">
+                    Your Login
+                    <input type="text" name="login" placeholder="Enter" required class="login-input">
+                </label>
+
+                <button class="submit-btn btn" type="submit">Next</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <form class="modal-wrapper modal-transition">
+
+            <div class="modal-header">
+                <span class="modal-heading">Create Your Account</span>
+                <span class="modal-toggle close">
+                    <img src="./img/close.svg" alt="close">
+                </span>
+            </div>
+
+            <div class="modal-body">
+                <label for="name" class="label">
+                    Name
+                    <input type="text" name="name" placeholder="Enter" class="modal-form-input">
+                </label>
+
+                <label for="mail" class="label">
+                    *E-mail
+                    <input type="text" name="mail" placeholder="Enter" required class="modal-form-input">
+                </label>
+
+                <button class="submit-btn btn" type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="burger-menu-bg"></div>
+
+    <div class="burger-menu">
+
+        <div class="burger-btn">
+            <img src="./img/hamburger-menu.svg" alt="">
+        </div>
+        <ul class="burger-menu__list">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Pricing</li>
+        </ul>
+        <div class="burger-menu__footer">
+            <span>beryoga@yuk.com</span>
+            <span>0812 6824 2856 (Main)</span>
+            <span>(072) 2673842 (Toll-free)</span>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="container">
+
+            <div class="nav">
+                <a href="./index.html" class="logo">BerYoga</a>
+                <div class="nav-items">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Pricing</a>
+                </div>
+
+                <div class="nav-right-mobile">
+                    <button class="btn" id="login-btn">Login</button>
+                    <div class="burger-btn">
+                        <img src="./img/hamburger-menu.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>
+                        Beautiful videos.<br>
+                        Become your best self<br>
+                        with BerYoGa.
+                    </h1>
+                    <p>
+                        For me, BerYoga is more than just a sport – it is lifestyle,
+                        a state mind, a philosophy.
+                        Now I decided to open BerYoga so that I can share
+                        my love and joy of bikram yoga. It is my hope that you too
+                        can discover all the positive impacts of bikram yoga and
+                        make bikram yoga as a part of your life.
+                    </p>
+                    <button class="btn button-service" onclick="anchorScroll('services')">Service</button>
+                    <button class="btn button-transparent" id="signup-btn">Sign Up</button>
+                </div>
+                <div class="header-anim-img">
+                    <img class="img-mat" src="../site-yoga/img/yoga-mat.svg" alt="yoga-mat">
+                    <img class="img-girl" src="../site-yoga/img/yoga-girl.svg" alt="yoga-girl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-advantages">
+        <div class="container">
+            <h2>
+                Why Choose BerYoga?
+            </h2>
+            <p>
+                Access hundreds of online yoga classes shot in natural studios around the world. <br>
+                Unlimited access for $150/Years.
+            </p>
+            <div class="advantages">
+                <div class="advantages-content">
+                    <img src="./img/icon-advantage-1.png" alt="icon-advantage-1">
+                    <span>
+                        Lifetime Updates
+                    </span>
+                    <p class="advantages-text">
+                        Free lifetime updates for our lates collection
+                    </p>
+                </div>
+                <div class="advantages-content">
+                    <img src="./img/icon-advantage-2.png" alt="icon-advantage-2">
+                    <span>
+                        Anywhere Videos
+                    </span>
+                    <p class="advantages-text">
+                        Access world-class online yoga videos can be seen on the application & web
+                    </p>
+                </div>
+                <div class="advantages-content">
+                    <img src="./img/icon-advantage-3.png" alt="icon-advantage-3">
+                    <span>
+                        Access Unlimited
+                    </span>
+                    <p class="advantages-text">
+                        Find lots of yoga video tutorials, from all over the world
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-about">
+        <div class="container">
+
+            <img src="./img/about-section-img.png" alt="girl-on-the-mat">
+
+            <div class="about">
+                <h2>
+                    What’s on BerYoga?
+                </h2>
+                <div class="about-content">
+
+                    <span class="about-item">
+                        New Classes Every Week
+                    </span>
+                    <p>
+                        Discover hundreds of classes in our library. Save your favorites, try new styles and
+                        customize
+                        your
+                        routine to fit your schedule.
+                    </p>
+
+                    <span class="about-item">
+                        Series
+                    </span>
+                    <p>
+                        Our multi-class series are designed to help you achieve your fitness and wellness goals.
+                    </p>
+
+                    <span class="about-item">
+                        Pose Directory
+                    </span>
+                    <p>
+                        Get step-by-step instructions on poses and sequences in our extensive video pose directory.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="healing-power-section">
+        <div class="container">
+            <div class="healing-power-content">
+                <span>
+                    By Brittany Risherjan _____
+                </span>
+                <h2>
+                    The Healing Power of <br>
+                    Trauma-Informed Yoga <br>
+                    Classes.
+                </h2>
+                <p>
+                    Celebrating five years of service, the nonprofit
+                    Exhale to Inhale brings free, trauma-informed
+                    yoga classes to rape crisis centers and domestic
+                    violence shelters in Jakarta.
+                </p>
+                <a href="#" class="read-more-link">
+                    Read More >
+                </a>
+            </div>
+            <img src="./img/the-healing.png" alt="yoga-girl">
+        </div>
+    </section>
+    <section class="ways-section">
+        <div class="container">
+            <img src="./img/ways-section.png" alt="yoga">
+            <div class="ways-section-content">
+                <h2>5 Ways to Make Every Yoga
+                    Class More Restorative and
+                    Therapeutic
+                </h2>
+                <p>
+                    In part four of our series on teaching trauma-sensitive yoga,
+                    teacher Daniel Sernicola shares five practices to help your students
+                    get grounded and cultivate mindfulness. <br> <br>
+                    Teachers, need liability insurance? As a TeachersPlus
+                    member, you can access low-cost coverage and more than a dozen
+                    valuable benefits that will build your skills and business. Enjoy a free
+                    subscription to YJ, a free profile on our national directory, exclusive
+                    webinars and content packed with advice, discounts on educational
+                    resources and gear, and more.
+                </p>
+                <a href="#" class="read-more-link">Read More ></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="prefooter" id="services">
+
+                <div class="course-price">
+                    <span class="price-item">
+                        Unlimited Access Video
+                    </span>
+                    <span class="price-item">
+                        Saved Videos
+                    </span>
+                    <span class="price-item">
+                        Offline Access
+                    </span>
+                    <span class="price">
+                        15
+                    </span>
+                    <span class="period-details">
+                        Billed monthly
+                    </span>
+                    <button class="btn blue-color-button">
+                        Become A Member
+                    </button>
+                </div>
+
+                <div class="best-seller-course-price">
+                    <span class="course-name">
+                        BEST SELLER
+                    </span>
+                    <span class="price-item">
+                        Unlimited Access Video
+                    </span>
+                    <span class="price-item">
+                        Saved Videos
+                    </span>
+                    <span class="price-item">
+                        Offline Access
+                    </span>
+                    <span class="price">
+                        150
+                    </span>
+                    <span class="period-details">
+                        Billed a one year - Save 45%
+                    </span>
+                    <button class="btn">
+                        Become A Member
+                    </button>
+                </div>
+
+
+                <div class="yoga-course-price course-price">
+                    <span class="course-name">
+                        Yoga Class
+                    </span>
+                    <span class="price-item">
+                        Only Yoga Class
+                    </span>
+                    <span class="price-item">
+                        Unlimited Access Video
+                    </span>
+                    <span class="price">
+                        5
+                    </span>
+                    <span class="period-details">
+                        Billed monthly
+                    </span>
+                    <button class="btn blue-color-button">
+                        Become A Member
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu-section">
+                    <span>CONTACT US</span>
+                    <p>
+                        Beryoga, Jl. Sudirman <br>
+                        no. 129, Tebet <br>
+                        Jakarta Selatan <br> <br>
+                        beryoga@yuk.com <br>
+                        0812 6824 2856 (Main) <br>
+                        (072) 2673842 (Toll-free)
+                    </p>
+                </div>
+                <div class="footer-menu-section">
+                    <span>ABOUT US</span>
+                    <a href="#">Our Mission</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Management</a>
+                    <a href="#">Policies</a>
+                </div>
+                <div class="footer-menu-section">
+                    <span>OUR PROGRAMS</span>
+                    <a href="#">Yoga Class</a>
+                    <a href="#">Bikram Yoga</a>
+                    <a href="#">Acro Yoga</a>
+                    <a href="#">Sveda Yoga</a>
+                    <a href="#">Yo Mama</a>
+                </div>
+                <div class="footer-menu-section">
+                    <span>SUPPORT TRAILS</span>
+                    <a href="#">Donate</a>
+                    <a href="#">Individual Membership</a>
+                    <a href="#">Gift membership</a>
+                    <a href="#">Hiker Store</a>
+                </div>
+                <span class="copyright">Copyright © 2020 BerYoga All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function anchorScroll(to) {
+            let container = document.getElementById(to);
+
+            // console.log(to)
+            document.body.parentNode.scrollTo({
+                top: (container.offsetTop) - 100,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
